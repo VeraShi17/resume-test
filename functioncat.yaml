@@ -1,0 +1,23 @@
+opensystem: v1.0.0
+info:
+  name: resume editor 
+envs:
+  prod:
+    branch: master
+routes:
+  main_env: prod
+  main_app: frontend
+apps:
+  frontend:
+    type: web_frontend
+    envs:
+      prod:
+        build:
+          root_path: ./
+          before_script: NODE_VERSION=20
+          command:  npm run build
+        provision:
+          root_path: build
+          runtime:
+            type: nodejs18x
+     
