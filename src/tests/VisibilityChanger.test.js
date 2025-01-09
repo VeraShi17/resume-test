@@ -53,7 +53,7 @@ describe('Toggle buttons render as expected, displayed under "Visibility" with e
         * each corresponding toggle button has data-testid = 'show' + resume element's data-testid
         * (eg. "Email", "showEmail")
         */
-    const dataTestIDs = ['Email', 'Phone', 'Github', 'LinkedIn', 'Website', 'Address', 'Certification', 'Education', 'Experience', 'Projects', 'TechSkills', 'SkillLevel'];
+    const dataTestIDs = ['Email', 'Phone', 'Github', 'LinkedIn', 'Website', 'Address', 'Certification', 'Education', 'Work Experience', 'Projects', 'TechSkills', 'SkillLevel'];
 
     dataTestIDs.forEach((id) => {
       // get btn el
@@ -111,7 +111,7 @@ describe('Toggle buttons work as expected', () => {
     render(<Provider store={store}><Resume /></Provider>);
 
     // note: "showSkillLevel" toggle button not being tested yet
-    const dataTestIDs = ['Email', 'Phone', 'Github', 'LinkedIn', 'Website', 'Address', 'Certification', 'Education', 'Experience', 'Projects', 'TechSkills', 'SkillLevel'];
+    const dataTestIDs = ['Email', 'Phone', 'Github', 'LinkedIn', 'Website', 'Address', 'Certification', 'Education', 'Work Experience', 'Projects', 'TechSkills', 'SkillLevel'];
 
     dataTestIDs.forEach((id) => {
       // if toggle button status is on, corresponding resume content should be visible
@@ -134,7 +134,7 @@ describe('Toggle buttons work as expected', () => {
     render(<Provider store={store}><Resume /></Provider>);
 
     // note: "showSkillLevel" toggle button not being tested yet
-    const dataTestIDs = ['Email', 'Phone', 'Github', 'LinkedIn', 'Website', 'Address', 'Certification', 'Education', 'Experience', 'Projects', 'TechSkills'];
+    const dataTestIDs = ['Email', 'Phone', 'Github', 'LinkedIn', 'Website', 'Address', 'Certification', 'Education', 'Work Experience', 'Projects', 'TechSkills'];
 
     dataTestIDs.forEach((id) => {
       // toggling off should update toggle button status from on to off

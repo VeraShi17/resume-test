@@ -13,7 +13,7 @@ import { refreshResume, toggleMoreVisibility, updateResume } from '../../actions
 
 const sectionHeaderMap = {
   header: 'Address Parts',
-  experience: 'Experience',
+  experience: 'Work Experience',
   education: 'Education',
   certification: 'Certification',
   technicalSkills: 'Technical Skills',

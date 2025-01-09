@@ -7,7 +7,7 @@ function Experience({ experience, font }) {
   return (
     <section data-testid="Experience" className="resume-experience">
       <h2 style={{ fontFamily: font }}>
-        Experience
+        Work Experience
       </h2>
       <hr />
       <ul>
@@ -16,13 +16,13 @@ function Experience({ experience, font }) {
             <li key={uuid()}>
               {' '}
               <h3 style={{ fontFamily: font }}>
-                {exp.position}
+                {`${exp.company}, ${exp.city}, ${exp.state}`}
               </h3>
               {exp.dateFrom &&
                 <h3 style={{ fontFamily: font }}>
                   {`${exp.dateFrom}${exp.dateTo ? ` - ${exp.dateTo}` : ''}`}
                 </h3>}
-              <em>{`${exp.company}, ${exp.city}, ${exp.state}`}</em>
+              <em>{exp.position}</em>
               <ul>
                 <li>{exp.primaryWorkBrief}</li>
                 {exp.impact1 && <li>{exp.impact1}</li>}

@@ -44,7 +44,7 @@ class OrderChanger extends Component {
           resumeSection = 'Technical Skills';
           break;
         case EXPERIENCE:
-          resumeSection = 'Experience';
+          resumeSection = 'Work Experience';
           break;
         case PROJECTS:
           resumeSection = 'Projects';
